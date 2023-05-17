@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 
 const HomePage = () => {
   const [data, setData] = useState(null);
-  const { type } = useParams("type");
+  const { type } = useParams();
 
   useEffect(() => {
     async function getPetsData() {
